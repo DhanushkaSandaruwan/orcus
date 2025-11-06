@@ -6,19 +6,19 @@ const customers = [
     quote: "0rcus is the future of preemptive cybersecurity, delivered fast in boardroom language.",
     name: "Neuman Osman",
     title: "Director of Wells Fargo Technology Banking",
-    image: "https://placehold.co/217x217",
+    image: "/person1.jpeg",
   },
   {
     quote: "Securing our infrastructure has never been easier, thanks to 0rcus.",
     name: "Alicia Tan",
     title: "CTO at FinTech Solutions",
-    image: "https://placehold.co/217x217",
+    image: "/person2.jpeg",
   },
   {
     quote: "0rcus helped us anticipate threats before they even appeared.",
     name: "David Chen",
     title: "VP of Security at GlobalBank",
-    image: "https://placehold.co/217x217",
+    image: "/person3.avif",
   },
 ];
 
