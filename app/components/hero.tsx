@@ -1,3 +1,5 @@
+import Companies from "./companies";
+
 export default function Hero() {
   return (
     <div className="flex flex-col items-start gap-2.5 min-w-screen min-h-screen overflow-auto relative">
@@ -141,6 +143,7 @@ export default function Hero() {
         <p className="text-[#ABABAB] font-inter text-xl font-normal leading-[1.3em] tracking-[-0.0001em]">
           Nic Adams, 0rcus CEO
         </p>
+        <Companies />
       </div>
     </div>
   );
