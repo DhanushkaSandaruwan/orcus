@@ -76,7 +76,7 @@ function AnimatedBentoCard({ title, text, img }: { title: string; text: string; 
       ref={ref}
       className={`flex flex-col justify-between items-start p-[31px] rounded-[20px]
          border border-[rgba(255,255,255,0.20)] bg-gradient-to-b from-[#2D0A12] to-[#460019]
-         w-full max-w-[400px] h-[450px] transition-all duration-700 transform
+         w-full lg:max-w-[400px] h-[450px] transition-all duration-700 transform
          ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
          hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(254,44,94,0.5)]`}
     >
