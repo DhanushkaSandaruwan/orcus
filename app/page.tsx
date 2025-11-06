@@ -5,6 +5,7 @@ import Companies from "./components/companies";
 import CtaS from "./components/ctas";
 import CtaSection from "./components/ctaSection";
 import Features from "./components/features";
+import Footer from "./components/footer";
 import Frame39 from "./components/frame39";
 import Hero from "./components/hero";
 import Margin from "./components/margin";
@@ -24,6 +25,7 @@ export default function Home() {
         <Frame39 />
         <Clients />
         <CtaSection />
+        <Footer />
       </main>
     </div>
   );
