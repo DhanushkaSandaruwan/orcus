@@ -17,7 +17,6 @@ export default function Home() {
       <main className="flex min-h-screen w-full flex-col items-center bg-white dark:bg-black ">
         <Navm />
         <Hero />
-        <Companies />
         <Bento />
         <Features />
         <CtaS />
