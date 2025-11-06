@@ -39,7 +39,7 @@ export default function Bento() {
   return (
     <div
       id="platform"
-      className="flex pt-[5px] px-[20px] lg:px-[50px] pb-20 flex-col items-center gap-10 min-w-screen min-h-screen overflow-auto"
+      className="flex pt-[75px] px-[20px] lg:px-[50px] pb-20 flex-col items-center gap-10 min-w-screen min-h-screen overflow-auto"
     >
       {/* Heading */}
       <p className="text-[#FFF] font-inter text-[56px] font-medium leading-[0.67857em] text-center tracking-[-0.0004em]">

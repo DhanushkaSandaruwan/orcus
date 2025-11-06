@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center gap-10 px-4 text-center">
+      <div className="relative z-10 flex flex-col items-center gap-10 px-4 text-center mt-10">
         {/* Badge */}
         <div className="flex py-2 px-3.5 items-center gap-2 rounded-full border border-[rgba(255,255,255,0.15)] bg-black">
           <button className="bg-rose-500 rounded-full px-3 py-1 text-black font-bold text-xs">
