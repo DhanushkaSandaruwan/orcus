@@ -40,7 +40,7 @@ export default function Clients() {
   const customer = customers[currentIndex];
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center relative text-white">
+    <div id="customers" className="w-full h-screen flex flex-col justify-center items-center relative text-white">
       {/* Title */}
       <div className="text-center">
         <div className="overflow-hidden text-6xl font-medium font-['Inter'] leading-[65px] mb-4">
