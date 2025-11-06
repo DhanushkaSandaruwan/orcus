@@ -1,7 +1,6 @@
 
 import Bento from "./components/bento";
 import Clients from "./components/clients";
-import Companies from "./components/companies";
 import CtaS from "./components/ctas";
 import CtaSection from "./components/ctaSection";
 import Features from "./components/features";
@@ -22,9 +21,9 @@ export default function Home() {
         <CtaS />
         <Margin />
         <Frame39 />
-        {/*<Clients />*/}
-        {/*<CtaSection />*/}
-        {/*<Footer />*/}
+        <Clients />
+        <CtaSection />
+        <Footer />
       </main>
     </div>
   );
