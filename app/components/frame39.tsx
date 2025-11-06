@@ -1,5 +1,4 @@
 "use client"
-import { useEffect, useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function Frame39() {
@@ -30,7 +29,7 @@ export default function Frame39() {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-[70px] pb-20 pt-0 min-w-screen w-full bg-[#000] px-[50px]">
+    <div className="flex flex-col items-center gap-[70px] pt-0 min-w-screen w-full bg-[#000] px-[20px] lg:px-[50px]">
       {/* === Top Row (3 Cards) === */}
       <div className="grid grid-flow-col grid-cols-1 grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 w-full max-w-[1280px] gap-x-[20px] gap-y-[70px] justify-center">
         {topCards.map((card, i) => (

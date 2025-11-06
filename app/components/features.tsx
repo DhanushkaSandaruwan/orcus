@@ -55,9 +55,9 @@ export default function MiniFAQ() {
   };
 
   return (
-    <div className="flex flex-col py-19 px-[50px] items-center gap-[41px] border border-[rgba(255,255,255,0.15)] bg-gradient-to-br from-[#FE2C5E] to-[#020103] min-w-screen overflow-auto">
+    <div className="flex flex-col py-19 px-[20px] lg:px-[50px] items-center gap-[41px] border border-[rgba(255,255,255,0.15)] bg-gradient-to-br from-[#FE2C5E] to-[#020103] min-w-screen overflow-auto">
       <button className="cursor-pointer text-nowrap flex flex-col justify-center items-center gap-[31px] w-fit">
-        <p className="flex flex-col justify-center text-[#FFF] font-inter text-[56px] font-medium leading-[1.16071em] w-[289px] h-12 text-center tracking-[-0.015em]">
+        <p className="flex flex-col justify-center text-[#FFF] font-inter text-[56px] font-medium leading-[1.16071em] w-full max-w-[289px] h-12 text-center tracking-[-0.015em]">
           FAQs
         </p>
       </button>

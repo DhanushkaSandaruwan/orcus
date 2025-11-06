@@ -1,7 +1,6 @@
 
 import Bento from "./components/bento";
 import Clients from "./components/clients";
-import Companies from "./components/companies";
 import CtaS from "./components/ctas";
 import CtaSection from "./components/ctaSection";
 import Features from "./components/features";
