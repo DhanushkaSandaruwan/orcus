@@ -54,7 +54,7 @@ export default function Clients() {
       </div>
 
       {/* Grid + Content */}
-      <div className="relative w-[1050px] h-[420px] mt-10 flex justify-center items-center">
+      <div className="relative w-full max-w-[1050px] h-[420px] mt-10 flex justify-center items-center">
         {/* Image */}
         <img
           key={customer.name}
