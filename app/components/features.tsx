@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const faqData = [
   {
@@ -70,7 +71,7 @@ export default function MiniFAQ() {
           >
             {/* Question */}
             <button
-              className="flex justify-between items-center w-full p-[31px] bg-[#000] cursor-pointer"
+              className="flex justify-between items-center w-full p-[31px] bg-[#000] cursor-pointer hover:bg-[rgba(255,255,255,0.05)] transition-colors duration-200"
               onClick={() => toggleIndex(i)}
             >
               <p className="text-[#FFF] font-montserrat text-[22px] font-semibold leading-[1.36em]">
@@ -82,7 +83,7 @@ export default function MiniFAQ() {
                 viewBox="0 0 23 29"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={`w-[23px] h-[29px] transition-transform duration-200 ${
+                className={`w-[23px] h-[29px] transition-transform duration-300 ${
                   openIndex === i ? "rotate-90" : "rotate-0"
                 }`}
               >
@@ -93,13 +94,26 @@ export default function MiniFAQ() {
               </svg>
             </button>
 
-            {/* Answer */}
-            {openIndex === i && (
-              <div className="flex flex-col gap-1 px-[31px] py-2 bg-[#000]">
-                <p className="text-[#FFF] font-montserrat text-[16px]">{item.answer[0]}</p>
-                <p className="text-gray-400 font-montserrat text-[14px]">{item.answer[1]}</p>
-              </div>
-            )}
+            {/* Answer with animation */}
+            <AnimatePresence initial={false}>
+              {openIndex === i && (
+                <motion.div
+                  key="content"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex flex-col gap-1 px-[31px] py-2 bg-[#000] overflow-hidden"
+                >
+                  <p className="text-[#FFF] font-montserrat text-[16px]">
+                    {item.answer[0]}
+                  </p>
+                  <p className="text-gray-400 font-montserrat text-[14px]">
+                    {item.answer[1]}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         ))}
       </div>
