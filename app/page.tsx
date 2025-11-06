@@ -22,9 +22,9 @@ export default function Home() {
         <CtaS />
         <Margin />
         <Frame39 />
-        <Clients />
-        <CtaSection />
-        <Footer />
+        {/*<Clients />*/}
+        {/*<CtaSection />*/}
+        {/*<Footer />*/}
       </main>
     </div>
   );

@@ -1,7 +1,7 @@
 export default function Bento() {
     return (
         <div id="platform"
-            className="flex pt-[5px] pr-[50px] pb-20 pl-[50px] flex-col items-center gap-10 min-w-screen min-h-screen overflow-auto">
+            className="flex pt-[5px] px-[20px] lg:px-[50px] pb-20 flex-col items-center gap-10 min-w-screen min-h-screen overflow-auto">
             {/* Heading */}
             <p className="text-[#FFF] font-inter text-[56px] font-medium leading-[0.67857em] text-center tracking-[-0.0004em]">
                 PLATFORM
@@ -48,7 +48,7 @@ export default function Bento() {
                         key={i}
                         className="flex flex-col justify-between items-start p-[31px] rounded-[20px]
                        border border-[rgba(255,255,255,0.20)] bg-gradient-to-b from-[#2D0A12] to-[#460019]
-                       w-[400px] h-[450px]"
+                       w-full max-w-[400px] h-[450px]"
                     >
                         <div className="flex flex-col items-start gap-[19px]">
                             <p className="text-[#FFF] font-montserrat text-xl font-semibold leading-[1.2em]">
