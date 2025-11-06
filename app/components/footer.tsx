@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-16 flex flex-col items-center gap-10 relative px-5 sm:px-10 mt-30">
+    <footer className="w-full bg-black text-white pt-0 pb-16 flex flex-col items-center gap-10 relative px-5 sm:px-10 mt-30">
       {/* Top Image Decoration */}
       <div className="relative w-24 h-36">
         <img

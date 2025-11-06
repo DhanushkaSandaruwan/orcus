@@ -59,7 +59,7 @@ export default function Clients() {
                 <img
                     key={customer.name}
                     className={`absolute left-0 right-0 m-auto lg:right-auto lg:left-[260px] top-[60px] lg:top-[160px] 
-                    w-40 h-40 rounded-[20px] transition-opacity duration-500 ${
+                    w-40 h-40 rounded-[20px] transition-opacity object-cover duration-500 ${
                         fade ? "opacity-100" : "opacity-0"
                     }`}
                     src={customer.image}
