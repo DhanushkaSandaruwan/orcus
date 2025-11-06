@@ -68,13 +68,13 @@ export default function Clients() {
 
                 {/* Grid lines */}
                 <div
-                    className="hidden lg:block absolute left-[460px] top-0 origin-top-left rotate-90 opacity-60 outline outline-1 outline-neutral-900 w-[500px]"/>
+                    className="lg:block absolute right-[100px] lg:right-auto sm:left-[460px] top-0 origin-top-left rotate-90 opacity-60 outline outline-1 outline-neutral-900 w-[500px]"/>
                 <div
-                    className="hidden lg:block absolute left-[220px] top-0 origin-top-left rotate-90 opacity-60 outline outline-1 outline-neutral-900 w-[500px]"/>
+                    className="lg:block absolute left-[100px] lg:left-[220px] top-0 origin-top-left rotate-90 opacity-60 outline outline-1 outline-neutral-900 w-[500px]"/>
                 <div
-                    className="hidden lg:block absolute left-0 top-[140px] opacity-60 outline outline-1 outline-neutral-900 w-full"/>
+                    className="lg:block absolute top-[45vh] left-0 lg:top-[140px] opacity-60 outline outline-1 outline-neutral-900 w-full"/>
                 <div
-                    className="hidden lg:block absolute left-0 top-[340px] opacity-60 outline outline-1 outline-neutral-900 w-full"/>
+                    className="lg:block absolute bottom-[45vh] lg:bottom-auto left-0 lg:top-[340px] opacity-60 outline outline-1 outline-neutral-900 w-full"/>
 
                 {/* Text content */}
                 <div
@@ -96,7 +96,7 @@ export default function Clients() {
                 </div>
 
                 {/* Glow effect */}
-                <div className="absolute left-[220px] top-[130px] w-64 h-64 bg-rose-500/50 rounded-full blur-[127px]"/>
+                <div className="absolute left-auto right-auto lg:left-[220px] top-auto lg:top-[130px] w-64 h-64 bg-rose-500/50 rounded-full blur-[127px]"/>
             </div>
         </div>
     );
