@@ -3,21 +3,21 @@ import { useState, useEffect } from "react";
 
 const customers = [
   {
-    quote: "0rcus is the future of preemptive cybersecurity, delivered fast in boardroom language.",
+    quote: "Outcome Al is the future of preemptive cybersecurity, delivered fast in boardroom language.",
     name: "Neuman Osman",
     title: "Director of Wells Fargo Technology Banking",
-    image: "/person1.jpeg",
+    image: "/person1.png",
   },
   {
-    quote: "Securing our infrastructure has never been easier, thanks to 0rcus.",
-    name: "Alicia Tan",
-    title: "CTO at FinTech Solutions",
+    quote: "0rcus set a higher standard for proactive testing and cooperation between nations.",
+    name: "Valeriya Danylenko",
+    title: "Founder of Danylenko VV, VP of USCCD",
     image: "/person2.jpeg",
   },
   {
-    quote: "0rcus helped us anticipate threats before they even appeared.",
-    name: "David Chen",
-    title: "VP of Security at GlobalBank",
+    quote: "In pilot, actionable alerts dropped over 90%, and our analysts focused on real threats.",
+    name: "",
+    title: "Cyber Specialist at McKinsey & Company",
     image: "/person3.avif",
   },
 ];
@@ -74,11 +74,11 @@ export default function Clients() {
         {/* Text content */}
         <div
           key={customer.name + "-text"}
-          className={`absolute left-[470px] top-[160px] flex flex-col justify-start items-start gap-1 max-w-[1000px] transition-opacity duration-500 ${
+          className={`absolute left-[470px] top-[160px] flex flex-col justify-start items-start gap-1 max-w-[500px] transition-opacity duration-500 ${
             fade ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="text-2xl font-medium font-['Inter'] leading-loose">
+          <div className="text-2xl font-medium font-['Inter'] leading-relaxed">
             &quot;{customer.quote}&quot;
           </div>
           <div className="text-base font-normal font-['Inter'] leading-relaxed">
