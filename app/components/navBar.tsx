@@ -21,6 +21,7 @@ export default function Navm() {
                      absolute start-0 lg:static lg:ms-auto
                      bg-black/70
                      lg:bg-transparent
+                     lg:opacity-100
                      ${open ? "top-20 opacity-100" : "-top-96 opacity-0"}`
                     }>
                     {["PLATFORM", "SOLUTIONS", "CUSTOMERS"].map((item) => (
