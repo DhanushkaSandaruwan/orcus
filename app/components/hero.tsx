@@ -1,3 +1,4 @@
+"use client"
 import Companies from "./companies";
 
 export default function Hero() {
@@ -135,11 +136,14 @@ export default function Hero() {
         </p>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <button className="cursor-pointer text-nowrap flex py-[5px] px-[15px] justify-center items-center gap-2 rounded-lg bg-[#FFF] w-[127px]">
-          <p className="text-[#000] font-inter text-[19px] font-medium leading-[1.63em] tracking-[-0.0101em]">
-            Featured In
-          </p>
-        </button>
+        <button
+  onClick={() => window.open("https://www.linkedin.com/in/nxadams", "_blank")}
+  className="cursor-pointer text-nowrap flex py-[5px] px-[15px] justify-center items-center gap-2 rounded-lg bg-[#FFF] w-[127px]"
+>
+  <p className="text-[#000] font-inter text-[19px] font-medium leading-[1.63em] tracking-[-0.0101em]">
+    Featured In
+  </p>
+</button>
         <p className="text-[#ABABAB] font-inter text-xl font-normal leading-[1.3em] tracking-[-0.0001em]">
           Nic Adams, 0rcus CEO
         </p>
