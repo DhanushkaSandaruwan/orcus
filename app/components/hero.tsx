@@ -39,11 +39,11 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <div className="flex flex-col items-center gap-2">
-          <h1 className="text-6xl lg:text-8xl font-extrabold uppercase text-white">
+        <div className="flex flex-col items-center gap-1.5 sm:gap-2">
+          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold uppercase text-white text-center">
             Outcome <span className="text-rose-500">AI</span>
           </h1>
-          <p className="text-white text-3xl font-semibold max-w-lg">
+          <p className="text-white text-xl sm:text-3xl font-semibold max-w-lg text-center">
             Press play → Protected
           </p>
         </div>
