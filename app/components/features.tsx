@@ -122,7 +122,7 @@ export default function MiniFAQ() {
             {/* CTA link */}
             <div className="mt-4">
                 <a href="#"
-                   className="hidden m cursor-pointer lg:flex py-[5px] px-[15px] justify-center items-center gap-2 rounded-lg bg-[#FFF]
+                   className="cursor-pointer lg:flex py-[5px] px-[15px] justify-center items-center gap-2 rounded-lg bg-[#FFF]
                     w-[97px] transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(254,44,94,0.5)]">
                     <span
                         className="text-[#000] font-inter text-[15px] font-medium leading-[2.06667em] w-fit tracking-[-0.0101em]">See all</span>
