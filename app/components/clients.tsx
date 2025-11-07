@@ -6,13 +6,13 @@ const customers = [
         quote: "Outcome Al is the future of preemptive cybersecurity, delivered fast in boardroom language.",
         name: "Neuman Osman",
         title: "Director of Wells Fargo Technology Banking",
-        image: "/person1.png",
+        image: "/WhatsApp Image 2025-11-07 at 11.31.27.jpeg",
     },
     {
         quote: "0rcus set a higher standard for proactive testing and cooperation between nations.",
         name: "Valeriya Danylenko",
         title: "Founder of Danylenko VV, VP of USCCD",
-        image: "/person2.jpeg",
+        image: "/WhatsApp Image 2025-11-07 at 11.31.28.jpeg",
     },
     {
         quote: "In pilot, actionable alerts dropped over 90%, and our analysts focused on real threats.",
