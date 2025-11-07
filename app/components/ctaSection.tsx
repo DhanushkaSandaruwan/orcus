@@ -13,23 +13,32 @@ export default function CtaSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const handleSubmit = async () => {
-    if (!email) {
-      setStatus("Please enter your email.");
-      return;
-    }
-    setStatus("Submitting...");
+  if (!email) {
+    setStatus("Please enter your email.");
+    return;
+  }
 
-    const { data, error } = await supabase
-      .from("subscribers")
-      .insert([{ email }]);
+  setStatus("Submitting...");
 
-    if (error) {
-      setStatus(error.message);
-    } else {
+  try {
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
       setStatus("Subscribed! 🎉");
       setEmail("");
+    } else {
+      setStatus("Error: " + data.error);
     }
-  };
+  } catch (err) {
+    setStatus("Something went wrong.");
+  }
+};
 
   return (
     <div className="relative w-full h-[400px] overflow-hidden">
