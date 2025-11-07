@@ -37,11 +37,11 @@ export default function CtaSection() {
             <div className="absolute inset-0 rounded-[10px]"/>
 
             {/* Hero image */}
-            <img
+            {/* <img
                 src="/Pattern1.png"
                 alt="Hero"
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl animate-float"
-            />
+            /> */}
 
             {/* Crimson Shadow Glow */}
             <div
