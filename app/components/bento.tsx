@@ -1,38 +1,38 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function Bento() {
   const cards = [
     {
-      title: 'ATTACK SURFACE MAP',
-      text: 'Sees your entire terrain, predicts movement, reveals exposure in real time.',
-      img: '/Group10000083061024x744png.png',
+      title: "ATTACK SURFACE MAP",
+      text: "Sees your entire terrain, predicts movement, reveals exposure in real time.",
+      img: "/Group10000083061024x744png.png",
     },
     {
-      title: 'REPLAY & DISRUPT',
-      text: 'Recreates live attack behavior, learns from outcomes, cuts disruption time to seconds.',
-      img: '/Group10000083071024x713png.png',
+      title: "REPLAY & DISRUPT",
+      text: "Recreates live attack behavior, learns from outcomes, cuts disruption time to seconds.",
+      img: "/Group10000083071024x713png.png",
     },
     {
-      title: 'ZERO-DAY DISCOVERY',
-      text: 'Uncovers the unknown, reproduces safely, prioritizes what matters.',
-      img: '/Group10000083161024x713png.png',
+      title: "ZERO-DAY DISCOVERY",
+      text: "Uncovers the unknown, reproduces safely, prioritizes what matters.",
+      img: "/Group10000083161024x713png.png",
     },
     {
-      title: 'AUTONOMOUS REMEDIATION',
-      text: 'Proposes verified fixes, applies with control, shows before and after certainty.',
-      img: '/Group10000083601024x720png.png',
+      title: "AUTONOMOUS REMEDIATION",
+      text: "Proposes verified fixes, applies with control, shows before and after certainty.",
+      img: "/Group10000083601024x720png.png",
     },
     {
-      title: 'THREAT INTELLIGENCE',
-      text: 'Connects leaks, signals, and intent into a single evolving view that explains every move.',
-      img: '/Group10000083671024x714png.png',
+      title: "THREAT INTELLIGENCE",
+      text: "Connects leaks, signals, and intent into a single evolving view that explains every move.",
+      img: "/Group10000083671024x714png.png",
     },
     {
-      title: 'IDENTITY CONTROL',
-      text: 'Enforces who can act, where, and when, continuously.',
-      img: '/Group10000083701024x713png.png',
+      title: "IDENTITY CONTROL",
+      text: "Enforces who can act, where, and when, continuously.",
+      img: "/Group10000083701024x713png.png",
     },
   ];
 
@@ -42,10 +42,10 @@ export default function Bento() {
       className="flex pt-[75px] px-[20px] lg:px-[50px] pb-20 flex-col items-center gap-10 min-w-screen min-h-screen overflow-auto"
     >
       {/* Heading */}
-      <p className="text-[#FFF] font-inter text-[56px] font-medium leading-[0.67857em] text-center tracking-[-0.0004em]">
+      <p className="text-4xl sm:text-[56px] font-inter font-medium text-[#FFF] leading-[0.75em] sm:leading-[0.67857em] text-center tracking-[-0.0004em]">
         PLATFORM
       </p>
-      <p className="text-[rgba(255,255,255,0.70)] font-montserrat text-xl font-medium leading-[1.25em] w-fit">
+      <p className="text-[rgba(255,255,255,0.70)] font-montserrat text-base sm:text-xl font-medium leading-[1.15em] sm:leading-[1.25em] w-full max-w-[600px] text-center px-4">
         Your AI companion. Anticipates exposure, shuts down risk.
       </p>
 
@@ -65,7 +65,15 @@ export default function Bento() {
 }
 
 // Animated Card Component
-function AnimatedBentoCard({ title, text, img }: { title: string; text: string; img: string }) {
+function AnimatedBentoCard({
+  title,
+  text,
+  img,
+}: {
+  title: string;
+  text: string;
+  img: string;
+}) {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
