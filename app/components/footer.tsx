@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="text-base font-medium font-['Montserrat']">
           access@0rcus.com
         </div>
-        <div className="text-base font-normal font-['DM_Sans']">
+        <div className="text-base font-normal font-['Montserrat']">
           © 2025 0rcus Inc. All rights reserved.
         </div>
       </div>

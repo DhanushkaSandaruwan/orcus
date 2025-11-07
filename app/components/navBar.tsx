@@ -6,7 +6,7 @@ import { MobileMenuIcon } from "@/app/assets/svg/MobileMenuIcon";
 export default function Navm() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="sticky top-0 z-50 bg-black/70 w-full h-20 border-b border-white/20 flex items-center justify-between px-[20px] lg:px-10">
+    <nav className="sticky top-0 z-999 bg-black/70 w-full h-20 border-b border-white/20 flex items-center justify-between px-[20px] lg:px-10">
       {/* Left: Logo */}
       <div className="flex items-center">
         <OrcusIcon />

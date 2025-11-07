@@ -89,10 +89,10 @@ export default function Clients() {
           <div className="text-2xl sm:text-2xl font-medium font-['Inter'] leading-snug text-center lg:text-start break-words">
             &quot;{customer.quote}&quot;
           </div>
-          <div className="text-base sm:text-base font-normal font-['Inter'] leading-snug text-center lg:text-start break-words">
+          <div className="text-base sm:text-base font-normal font-['Inter'] leading-snug text-center lg:text-start break-words mt-3">
             {customer.name}
           </div>
-          <div className="text-sm sm:text-sm font-normal font-['Inter'] leading-snug text-center lg:text-start break-words">
+          <div className="text-sm sm:text-sm font-normal font-['Inter'] leading-snug text-center lg:text-start break-words  text-gray-400">
             {customer.title}
           </div>
         </div>
